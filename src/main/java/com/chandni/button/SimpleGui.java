@@ -4,7 +4,9 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class SimpleGui implements ActionListener{
+public class SimpleGui implements ActionListener {
+
+    private static int clickCount = 0;
 
     private final JButton button = new JButton();
 
@@ -24,6 +26,7 @@ public class SimpleGui implements ActionListener{
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        button.setText("I've been clicked at least once");
+        clickCount++;
+        button.setText("I've been clicked " + clickCount);
     }
 }
