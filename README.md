@@ -6,3 +6,4 @@ Simple guis from the book that use event listeners
 Drawing Widget from page 364
 Image Icon from page 365
 Random Circle from page 365
+Gradient Circle from page 367

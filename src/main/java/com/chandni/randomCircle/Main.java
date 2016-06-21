@@ -1,4 +1,4 @@
-package com.chandni.com.chandni.randomCircle;
+package com.chandni.randomCircle;
 
 import javax.swing.*;
 
