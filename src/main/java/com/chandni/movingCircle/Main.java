@@ -43,6 +43,8 @@ public class Main {
 
         @Override
         public void paintComponent(Graphics graphics) {
+            graphics.setColor(Color.white);
+            graphics.fillRect(0,0,this.getWidth(),this.getHeight());
             graphics.setColor(Color.BLUE);
             graphics.fillOval(x, y, 30, 30);
         }
