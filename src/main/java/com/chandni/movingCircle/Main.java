@@ -25,17 +25,25 @@ public class Main {
 
         frame.setVisible(true);
 
-        Thread.sleep(3000l);
-        x = 200;
-        y = 200;
-        frame.repaint();
+        for (int steps = 0; steps < 200; steps++) {
+            x = x + 1;
+            y = y + 1;
+
+            try {
+                Thread.sleep(10);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            movingCircle.repaint();
+        }
     }
 
     private class MovingCircle extends JPanel {
 
         @Override
         public void paintComponent(Graphics graphics) {
-            graphics.setColor(Color.BLACK);
+            graphics.setColor(Color.BLUE);
             graphics.fillOval(x, y, 30, 30);
         }
     }
